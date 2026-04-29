@@ -1,0 +1,216 @@
+/* ==============================
+   RESET E ESTILOS BÁSICOS
+   ============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: hidden; /* remove rolagem lateral */
+}
+
+
+/* ==============================
+   CABEÇALHO
+   ============================== */
+header {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* centraliza os links */
+  flex-wrap: wrap; /* quebra linha se precisar */
+  gap: 25px; /* espaçamento entre os tópicos */
+  margin-top: 20px;
+}
+
+.navbar a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* ==============================
+   TÍTULOS
+   ============================== */
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 25px 0 15px 0;
+    cursor: default;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 20px 0 10px 0;
+    cursor: default;
+}
+
+/* ==============================
+   TEXTO E LISTAS
+   ============================== */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-decoration: none;
+    cursor: default;
+}
+
+ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+    cursor: default;
+}
+
+li {
+    margin-bottom: 8px;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* ==============================
+   LINKS
+   ============================== */
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+section a {
+    text-decoration: none;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* ==============================
+   DESTAQUES E SEÇÕES
+   ============================== */
+.highlight {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #ffffff;
+    margin: 15px 0;
+}
+
+.algorithm-section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.algorithm-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.algorithm-title h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.algorithm-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.algorithm-item {
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #ffffff;
+}
+
+.algorithm-name {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+/* ==============================
+   RODAPÉ
+   ============================== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    
+    h3 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    
+    .algorithm-list {
+        grid-template-columns: 1fr;
+    }
+}
